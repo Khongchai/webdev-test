@@ -1,0 +1,9 @@
+#banner-text-container button:hover {
+  opacity: 1;
+}
+#banner-text-container button:focus {
+  box-shadow: var(--focus);
+}
+.chevrons:hover {
+  opacity: 0.7;
+}

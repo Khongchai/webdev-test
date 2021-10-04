@@ -1,0 +1,101 @@
+#banner {
+  width: 100%;
+  height: clamp(300px, 100vw, 550px);
+  position: relative;
+  /* starting background image */
+  background-image: url("../../assets/banner/banner-1.jpg");
+  background-size: cover;
+  transition: background-image 0.3s;
+}
+
+#banner-text-container {
+  position: absolute;
+  transition: 0.3s;
+  box-shadow: 0;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0 4rem 0 4rem;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.82);
+}
+#banner-text-container * + * {
+  margin-top: 1rem;
+}
+
+#banner-text-container h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+#banner-text-container p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+#banner-text-container button {
+  font-size: 13px;
+  color: white;
+  background-color: var(--main-orange);
+  height: 42px;
+  border-radius: 8px;
+  width: 144px;
+  opacity: 1;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+#banner-text-container-wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+#chevron-right {
+  top: 50%;
+  right: 0;
+  transform: rotateZ(-90deg);
+}
+#chevron-left {
+  top: 50%;
+  transform: rotateZ(90deg);
+  left: 0;
+}
+.chevrons {
+  padding: 0.5rem;
+  opacity: 0.7;
+  background-color: var(--main-orange);
+  transition: opacity 0.3s;
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: var(--zIndex-chevrons);
+}
+
+@media only screen and (min-width: 768px) {
+  #banner-text-container h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  #banner-text-container p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #banner-text-container {
+    place-items: center;
+  }
+  #banner-text-container h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  #banner-text-container p {
+    margin: 0;
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,9 @@
+:root {
+  --main-orange: rgb(255, 115, 0);
+  --main-purple: rgb(96, 96, 236);
+
+  --focus: 0 0 0 3px rgb(153, 153, 252);
+  --zIndex-chevrons: 1000;
+  --zIndex-modal: 1500;
+  --zIndex-toast: 2000;
+}

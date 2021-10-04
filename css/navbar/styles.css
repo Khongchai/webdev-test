@@ -1,0 +1,19 @@
+#navbar {
+  padding: 2rem;
+  display: flex;
+  position: relative;
+}
+#navbar img {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+#items-in-cart-count {
+  position: absolute;
+  background-color: var(--main-purple);
+  padding: 3px 5px 3px 5px;
+  color: white;
+  top: 0;
+  right: 30px;
+  border-radius: 5px;
+}

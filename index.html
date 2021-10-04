@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Store!</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/banner/animations.css" />
+    <link rel="stylesheet" href="css/banner/styles.css" />
+    <link rel="stylesheet" href="css/items/styles.css" />
+    <link rel="stylesheet" href="css/navbar/styles.css" />
+    <link rel="stylesheet" href="css/modal/styles.css" />
+  </head>
+  <body>
+    <div id="toast">Added</div>
+    <section id="modal-background-cover">
+      <div id="modal">
+        <h2>Items in Cart</h2>
+        <hr />
+        <div id="modal-items-container"></div>
+        <button id="purchase-button">Purchase</button>
+      </div>
+    </section>
+    <section id="navbar">
+      <h2>Awesome Store</h2>
+      <img
+        role="button"
+        src="assets/shopping-cart.png"
+        width="50px"
+        height="50px"
+        alt=""
+        id="cart-button"
+      />
+      <p id="items-in-cart-count">0</p>
+    </section>
+    <hr />
+    <div id="global-container">
+      <section>
+        <div id="banner">
+          <img
+            src="assets/banner/chevron-down.png"
+            class="chevrons"
+            id="chevron-left"
+            alt=""
+          />
+          <div id="banner-text-container-wrapper">
+            <div id="banner-text-container">
+              <h1>Present Your Awesome Product</h1>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  alias nesciunt dolores vitae, dicta eaque in accusamus
+                  sapiente minima aperiam.
+                </p>
+              </div>
+              <button id="buy-now-button">BUY NOW</button>
+            </div>
+          </div>
+          <img
+            src="assets/banner/chevron-down.png"
+            class="chevrons"
+            id="chevron-right"
+            alt=""
+          />
+        </div>
+      </section>
+      <div>
+        <section id="cards-section"></section>
+      </div>
+      <section style="height: 200px; padding: 1rem">
+        Imagine a really beautiful footer here
+      </section>
+    </div>
+  </body>
+  <script src="js/banner.js" type="module"></script>
+  <script src="js/items/index.js" type="module"></script>
+  <script src="js/modal.js" type="module"></script>
+</html>
